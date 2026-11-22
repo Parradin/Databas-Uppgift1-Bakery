@@ -1,4 +1,4 @@
--- SQLite
+-- Table
 DROP TABLE Suppliers;
 DROP TABLE Ingredients;
 DROP TABLE Purchases;
@@ -6,6 +6,12 @@ DROP TABLE PurchaseItem;
 DROP TABLE StockMovement;
 
 PRAGMA foreign_keys = ON;
+
+PRAGMA foreign_keys;
+
+PRAGMA foreign_key_check;
+
+PRAGMA foreign_keys;
 
 PRAGMA foreign_key_list(StockMovement);
 
